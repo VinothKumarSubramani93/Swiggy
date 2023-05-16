@@ -57,7 +57,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng3.xml</suiteXmlFile>
+						<suiteXmlFile>homePageSwiggyTestng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

@@ -18,4 +18,5 @@ public class BaseClassSwiggy extends UtilsClass {
 	public void close() {
 		driver.quit();
 	}
+
 }

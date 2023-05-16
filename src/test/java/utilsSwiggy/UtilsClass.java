@@ -93,11 +93,12 @@ public class UtilsClass {
 	public static boolean displayStatus(WebElement element) {
 		return element.isDisplayed();
 	}
+	
 	@DataProvider
 	public static Object[][] dataReader() throws Exception{
 		String excelPath=System.getProperty("user.dir");
-		XSSFWorkbook workBook=new XSSFWorkbook(excelPath+"/Excel/Data.xlsx");
-		XSSFSheet sheet = workBook.getSheetAt(1);
+		XSSFWorkbook workBook=new XSSFWorkbook(excelPath+"/Excel/Swiggy.xlsx");
+		XSSFSheet sheet = workBook.getSheet("CityList");
 		int row = sheet.getPhysicalNumberOfRows();
 		int column = sheet.getRow(0).getPhysicalNumberOfCells();
 		Object[][] data=new Object[row][column];
